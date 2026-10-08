@@ -1,0 +1,118 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>砂漠の10日間 — FUMA</title><style>
+:root{
+  --paper:#fbfaf7;
+  --ink:#34343b;
+  --muted:#8a8b95;
+  --line:#d9d9df;
+  --accent:#7f89b8;
+  --accent-soft:#eef0f8;
+  --accent-2:#a98a8f;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink)}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+  "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+}
+a{color:inherit;text-decoration:none}
+.page{
+  min-height:100vh;
+  width:min(760px,calc(100% - 48px));
+  margin:auto;
+}
+.top-page{
+  display:flex;align-items:center;justify-content:center;
+}
+.top-inner{width:min(540px,100%)}
+.site-mark{
+  font-size:13px;letter-spacing:.18em;color:var(--accent);
+}
+.top-copy{
+  margin-top:54px;
+  font-size:13px;line-height:2.2;color:var(--muted);
+}
+.top-nav{
+  margin-top:68px;
+  display:flex;gap:34px;
+  font-size:11px;letter-spacing:.08em;
+}
+.top-nav a:hover{color:var(--accent)}
+.small-note{
+  margin-top:110px;font-size:10px;color:#aaa;line-height:2;
+}
+.index-page{padding:104px 0 140px}
+.page-head{
+  display:flex;align-items:baseline;justify-content:space-between;
+  border-bottom:1px solid var(--line);padding-bottom:18px;
+}
+.page-label{font-size:10px;letter-spacing:.12em;color:var(--accent-2)}
+.page-link{font-size:10px;color:var(--accent)}
+.works{margin-top:18px}
+.work{
+  display:grid;grid-template-columns:86px 1fr auto;
+  gap:18px;align-items:baseline;
+  padding:26px 0;border-bottom:1px solid var(--line);
+}
+.work .no{font-size:10px;color:#b0b0b6}
+.work .title{font-size:15px;letter-spacing:.05em}
+.work .desc{margin-top:8px;font-size:11px;color:var(--muted);line-height:1.8}
+.work .meta{font-size:9px;color:#999;letter-spacing:.08em;white-space:nowrap}
+.note-head{margin-top:88px}
+.reader-page{padding:88px 24px 130px}
+.reader-inner{width:min(620px,100%);margin:auto}
+.back{font-size:10px;letter-spacing:.1em;color:var(--accent)}
+.reader-title{margin-top:78px}
+.reader-title h1{
+  font-size:20px;font-weight:400;letter-spacing:.1em;margin:0 0 12px
+}
+.reader-title .meta{font-size:10px;color:var(--muted)}
+article{
+  margin-top:86px;
+  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+  font-size:15px;line-height:2.25;letter-spacing:.035em;
+}
+article p{margin:0 0 2em}
+article p:first-child::first-letter{color:var(--accent)}
+.end{text-align:center;color:var(--accent-2);margin:84px 0}
+.next{
+  border-top:1px solid var(--line);padding-top:20px;
+  display:flex;justify-content:space-between;
+  font-size:10px;color:var(--accent)
+}
+@media(max-width:640px){
+  .page{width:calc(100% - 40px)}
+  .top-nav{gap:24px;flex-wrap:wrap}
+  .index-page{padding:72px 0 100px}
+  .work{grid-template-columns:42px 1fr}
+  .work .meta{grid-column:2}
+  .reader-page{padding:60px 0 100px}
+  .reader-title{margin-top:58px}
+  article{margin-top:60px;font-size:14px}
+}
+</style></head><body>
+<main class="reader-page">
+  <div class="reader-inner">
+    <a class="back" href="contents.html">← contents</a>
+    <header class="reader-title">
+      <h1>砂漠の10日間</h1>
+      <div class="meta">2026.10.03　/　short story</div>
+    </header>
+    <article>
+      <p>砂漠では、時間の流れ方が少し違っていた。</p>
+      <p>朝、目を覚ますと、昨日までそこにあったはずの足跡が消えている。風が吹いたのだと思う。でも、風の音を聞いた記憶はなかった。</p>
+      <p>私は毎朝、同じ場所に座って、水を飲んだ。</p>
+      <p>十日間ここにいることになる、と言われたとき、十日という数字はひどく長く思えた。けれど三日目には、もう帰る日のことを考えなくなっていた。</p>
+      <p>遠くに、小さな影が見えた。</p>
+      <p>それが人なのか、動物なのか、最後までわからなかった。</p>
+      <p>ただ、その影を見つけた日は、不思議と眠れた。</p>
+      <div class="end">—</div>
+    </article>
+    <nav class="next">
+      <a href="contents.html">contents</a>
+      <a href="contents.html">next →</a>
+    </nav>
+  </div>
+</main>
+</body></html>

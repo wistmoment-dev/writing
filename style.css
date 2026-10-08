@@ -1,0 +1,46 @@
+
+:root{
+  --paper:#fbfaf7;
+  --ink:#34343b;
+  --muted:#8a8b95;
+  --line:#d9d9df;
+  --accent:#7f89b8;
+  --accent-2:#a98a8f;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink)}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+  "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+}
+a{color:inherit;text-decoration:none}
+.reader-page{padding:88px 24px 130px;min-height:100vh}
+.reader-inner{width:min(620px,100%);margin:auto}
+.back{font-size:10px;letter-spacing:.1em;color:var(--accent)}
+.reader-title{margin-top:78px}
+.reader-title h1{
+  font-size:20px;font-weight:400;letter-spacing:.1em;margin:0 0 12px
+}
+.reader-title .meta{font-size:10px;color:var(--muted)}
+article{
+  margin-top:86px;
+  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+  font-size:15px;line-height:2.25;letter-spacing:.035em;
+}
+article p{margin:0 0 2em}
+article p:first-child::first-letter{color:var(--accent)}
+.end{text-align:center;color:var(--accent-2);margin:84px 0}
+.next{
+  border-top:1px solid var(--line);
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  font-size:10px;
+  color:var(--accent)
+}
+.next a:hover,.back:hover{opacity:.65}
+@media(max-width:640px){
+  .reader-page{padding:60px 0 100px}
+  .reader-title{margin-top:58px}
+  article{margin-top:60px;font-size:14px}
+}

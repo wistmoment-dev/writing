@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>作品タイトル — FUMA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main class="reader-page">
+  <div class="reader-inner">
+
+    <!-- ← 戻り先は基本 contents.html のままでOK -->
+    <a class="back" href="contents.html">← contents</a>
+
+    <!-- ① ここだけ変更：作品タイトル -->
+    <header class="reader-title">
+      <h1>作品タイトル</h1>
+
+      <!-- ② ここだけ変更：日付・ジャンル・読了目安 -->
+      <div class="meta">2026.10.03　/　short story　/　8 min</div>
+    </header>
+
+    <!-- ③ ここに本文を書く -->
+    <article>
+      <p>ここに1段落目を書きます。</p>
+
+      <p>ここに2段落目を書きます。</p>
+
+      <p>段落ごとに <code>&lt;p&gt;</code> で囲むだけです。</p>
+
+      <p>長い本文になっても、そのまま下に追加していけば大丈夫。</p>
+
+      <!-- 本文の終わりに置く -->
+      <div class="end">—</div>
+    </article>
+
+    <!-- ④ 次の作品へのリンク。なければ contents だけでもOK -->
+    <nav class="next">
+      <a href="contents.html">contents</a>
+      <a href="next-story.html">next →</a>
+    </nav>
+
+  </div>
+</main>
+</body>
+</html>
